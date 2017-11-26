@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LatihanSPNJ_02</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="nama_anda">Nama Anda</string>
+    <string name="email_anda">Email Anda</string>
+    <string name="password">Password</string>
+    <string name="sign_up_with_facebook">Sign UP With Facebook</string>
+    <string name="have_a_account">Have a Account</string>
+</resources>

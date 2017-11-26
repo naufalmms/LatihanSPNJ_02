@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.naufal.latihanspnj_02.SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/logo_SignUp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/miuies_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo_SignUp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/sign_up"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/rounded_btn2"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/namaAnda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_person_outline_black_24dp"
+                android:drawableRight="@drawable/ic_person_outline_black_24dp"
+                android:gravity="center"
+                android:hint="@string/nama_anda"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/emailAnda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namaAnda"
+                android:drawableEnd="@drawable/ic_mail_outline_black_24dp"
+                android:drawableRight="@drawable/ic_mail_outline_black_24dp"
+                android:gravity="center"
+                android:hint="@string/email_anda"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/passwordAnda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailAnda"
+                android:drawableEnd="@drawable/ic_visibility_black_24dp"
+                android:drawableRight="@drawable/ic_visibility_black_24dp"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_sigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_btn"
+            android:text="@string/sign_in"
+            android:textColor="#ffff"
+            />
+
+        <Button
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_sigin"
+            android:background="@drawable/rounded_btn3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="#ffff"
+            android:text="@string/sign_up_with_facebook"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebook"
+            android:text="@string/have_a_account"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
